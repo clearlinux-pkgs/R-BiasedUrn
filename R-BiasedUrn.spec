@@ -4,7 +4,7 @@
 #
 Name     : R-BiasedUrn
 Version  : 1.07
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Summary  : Biased Urn Model Distributions
@@ -36,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552743941
+export SOURCE_DATE_EPOCH=1552916124
 
 %install
-export SOURCE_DATE_EPOCH=1552743941
+export SOURCE_DATE_EPOCH=1552916124
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

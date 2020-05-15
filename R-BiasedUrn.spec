@@ -4,7 +4,7 @@
 #
 Name     : R-BiasedUrn
 Version  : 1.07
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Summary  : Biased Urn Model Distributions
@@ -12,7 +12,6 @@ Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-BiasedUrn-lib = %{version}-%{release}
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 univariate and multivariate noncentral hypergeometric distributions, 
@@ -31,21 +30,22 @@ lib components for the R-BiasedUrn package.
 
 %prep
 %setup -q -c -n BiasedUrn
+cd %{_builddir}/BiasedUrn
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571801805
+export SOURCE_DATE_EPOCH=1589515184
 
 %install
-export SOURCE_DATE_EPOCH=1571801805
+export SOURCE_DATE_EPOCH=1589515184
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

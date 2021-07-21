@@ -4,7 +4,7 @@
 #
 Name     : R-BiasedUrn
 Version  : 1.07
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/BiasedUrn_1.07.tar.gz
 Summary  : Biased Urn Model Distributions

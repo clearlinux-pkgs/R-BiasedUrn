@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-BiasedUrn
-Version  : 2.0.10
-Release  : 47
-URL      : https://cran.r-project.org/src/contrib/BiasedUrn_2.0.10.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/BiasedUrn_2.0.10.tar.gz
+Version  : 2.0.11
+Release  : 48
+URL      : https://cran.r-project.org/src/contrib/BiasedUrn_2.0.11.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/BiasedUrn_2.0.11.tar.gz
 Summary  : Biased Urn Model Distributions
 Group    : Development/Tools
 License  : GPL-3.0
@@ -39,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685639716
+export SOURCE_DATE_EPOCH=1692632136
 
 %install
-export SOURCE_DATE_EPOCH=1685639716
+export SOURCE_DATE_EPOCH=1692632136
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
